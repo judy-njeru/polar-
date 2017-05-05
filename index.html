@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Polar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/infostyle.css">
+    <link rel="stylesheet" type="text/css" href="css/formsstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+        
+        
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<style>
+    .animal-image {
+       background-size: cover;
+ /* background-position: 0% 50%;*/
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: block;
+  top: 0;
+  left: 0;
+  padding: 0;
+    }
+
+    .animal-icon {
+            width: 300px;
+    height: 150px;
+    background-position: 39%, 27%;
+    background-size: 67%;
+    background-repeat: no-repeat;
+    }
+
+    .close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+}
+
+#form-window {
+    display: none;
+}
+</style>
+<script>
+    function loadForm(){
+        var formWindow = document.getElementById('form-window');
+            formWindow.classList.add('visible');
+            console.log('hi');
+    }
+</script>
+<body>
+    <div class="shadow"><div id="sphere"></div></div>
+    <div id="content"></div>
+    <div id="info-window">
+        <div class="banner">
+            <div class="animal-image zindex large-7 medium-7 small-12 columns wow fadeInDown appear" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="50"></div>
+            <div class="wow fadeInDown appear img-info large-5 medium-5 small-12 columns" data-wow-duration="2s" data-wow-delay="0.1s" data-wow-offset="50">
+                <a href="index.html"><button class="exitform close-button" aria-label="Dismiss alert" type="button" data-close><span aria-hidden="true">&times;</span></button></a>
+                <div class="row icon-bg align-center">
+                    <div class="animal-icon"></div>
+                </div><!-- close svg  -->
+                <div class="row title align-center">
+                    <h1 class="animal-name text-center"></h1>
+                </div>
+                <div class="row more-info align-center">
+                    <h2 class="animal-description_1"></h2> 
+                    <h2 class="animal-description_2"></h2> 
+                </div>
+                <div class="row align-center adopt-btn">
+                    <div class="large-12 medium-12 small-12 columns"></div>
+                    <!-- <a href="forms.html" class="button large expand">ADOPT A POLAR BEAR</a> -->
+                    <button class="btn-name button large expand" onclick="loadForm()"></button>
+                </div>
+            </div><!-- close img-info-->
+        </div><!-- close banner-->
+    </div><!-- close info-window-->
+    <div id="form-window">
+        <div class="banner">
+            <div class="animal-image zindex large-7 medium-7 small-12 columns"></div>  
+            <div class="wow fadeInRight appear img-info large-5 medium-5 small-12 columns" data-wow-duration="2s" data-wow-delay="0.1s" data-wow-offset="50">
+                <div class="row title align-center" data-closable="slide-out-right">
+                    <a href="index.html">
+                        <button class="exitform close-button" aria-label="Dismiss alert" type="button" data-close><span aria-hidden="true">&times;</span></button>
+                    </a>  
+                    <h1 class="btn-name text-left">Adopt a polarbear</h1>
+                    <div class="forms large-9 medium-9 small-12 columns">
+                        <label class="adopt-name formlable text-left">
+                            
+                        </label><input type="text">
+                        <label class="formlable text-left">Your first name*
+                            <input type="text">
+                        </label>
+                        <label class="formlable text-left">Your last name*
+                            <input type="text">
+                        </label>
+                        <label class="formlable text-left">Address*
+                            <input type="text">
+                        </label>
+                        <label class="formlable text-left">Email*
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="large-10 medium-10 small-12 columns">
+                        <a class="form-button button align-center" href="#"><h4>Adopt</h4></a>
+                    </div>
+                </div>  
+            </div>              
+        </div><!-- close banner-->
+    </div><!-- close form-window-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="js/three.min.js"></script>
+<script src="js/CSS3DRenderer.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/Panorama.js"></script>
+
+</body>
+</html>

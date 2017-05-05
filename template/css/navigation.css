@@ -1,0 +1,116 @@
+body {
+	background-color: darkslateblue;
+}
+
+.mutebtn {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 20px 20px 0 0;
+}
+
+.off{
+	display: none;
+}
+
+.navigate {
+	position: fixed;
+	top: -80px;
+	left: 170vh;
+	width: 100px;
+	height: 120vh;
+	background: url(../images/navlines-smaller.png) no-repeat;
+}
+
+
+span.title1{
+	margin-left: -50px;
+}
+
+span.title2{
+	margin-left: -45px;
+}
+
+span.title3{
+	margin-left: -78px;
+}
+
+span.title4{
+	margin-left: -140px;
+}
+
+.navigate li {
+	list-style: none;
+	backface-visibility: hidden;
+}
+
+.navigate li a.btn-1 {
+	top: 190px;
+	left: -10px;
+}
+
+.navigate li a.btn-2 {
+	top: 342px;
+	left: 39px;
+}
+
+.navigate li a.btn-3{
+	top: 467px;
+	left: -10px;
+}
+
+.navigate li a.btn-4 {
+	top: 590px;
+	left: 36px;
+}
+
+.navigate li a {
+	font-family: 'Fjalla One', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	position: absolute;
+	text-decoration: none;
+	display: block;
+	backface-visibility: hidden;
+}
+
+li a {
+	text-transform: uppercase;
+}
+
+.navigate li a span {
+	white-space: nowrap;
+	display: block;
+}
+
+.navigate li a:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 29px;
+	height: 29px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	transition: all .25s ease;
+	backface-visibility: hidden;
+}
+
+.navigate li a:hover::before {
+	background-color: #56CCF2;
+}
+
+.navigate li a:after {
+	content: '';
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	
+	transform: scale(0);
+	transition: all .25s ease;
+	backface-visibility: hidden;
+	
+}

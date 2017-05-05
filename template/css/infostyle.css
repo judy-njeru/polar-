@@ -1,0 +1,204 @@
+
+body {
+	background-color: #0E5673;
+	text-align: center;
+	font-weight: 600;
+}
+
+.img-bg {
+	background-image: url("../images/polarbear2.jpg");
+	background-size: cover;
+  background-position: 0% 50%;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: block;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+
+.img-bg img {
+	max-width: 800px;
+	width: 100vw;
+  height: 100vh;
+}
+
+.img-info {
+	background-color: #0E5673;
+	width: 100%;
+	height:auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-height: 100vh;
+	padding:0;
+	text-align: center;
+}
+
+.row.icon-bg.align-center {
+	margin: 7vh 0 7vh 0;
+}
+
+.row.icon-bg.align-center .st0{
+	fill: none;
+	stroke: #fff;
+	stroke-width:6;
+}
+
+.banner {
+	position: relative;
+	height: 100vh;
+}
+
+.title h1 {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	font-size: 60px;
+	color: #fff;
+	text-shadow: 1px 1px #424242;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.more-info h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	width: 30vw;
+	height: auto;
+	padding: 19px 0px;
+}
+
+.button {
+	margin: 0 auto;
+	background-color: #3DBCD9;
+}
+
+a.button.large.expand:hover  {
+	background-color: #158FBF;
+}
+
+.row.align-center.adopt-btn {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	font-size: 2px;
+	border-radius: 0;
+	color: rgba(255,255,255,.6);
+	width: 100%;
+}
+
+a.button.large.expand {
+	width: 100%;
+	margin-top: 50px;
+	padding: 40px;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	font-size: 38px;
+	text-transform: uppercase;
+	display: inline-block;
+	background-color: #3DBCD9;
+}
+
+a.button.large.expand:after {
+	font-family: FontAwesome;
+	content: "\f004";
+	margin-left: 1.5rem;
+	padding: 0.7rem;
+	background-color: #fff;
+	border-radius: 50%;
+	color: #3DBCD9;
+	height: 111px;
+	width: auto;
+}
+
+a.button.large.expand:hover::after{
+	color:#D93E3E;
+}
+
+
+.wow.fadeInLeft.appear {
+	visibility: visible;
+	animation-duration: 6s;
+	animation-delay: 0s;
+	animation-name: faded;
+}
+
+.exitform.close-button {
+	color: #fff;
+	font-size: 50px;
+	opacity: 0.7;
+}
+
+.exitform.close-button:hover {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+
+@keyframes faded {
+	0% {opacity: 0.2;}
+	
+	50% {opacity: 0.7}
+	80% {opacity: 0.95}
+	90% {opacity: 0.98}
+	95% {opacity: 0.99}
+  100% {opacity: 1;}
+}
+
+
+
+/*---MEDIA QUERIES---*/
+
+@media (min-width: 1070px) {
+    .adopt-btn {
+    	    position: absolute;
+    }
+}
+
+@media only screen and (max-width: 1070px) and (min-width: 642px)  {
+
+	   a.button.expand {
+	   
+	font-size: 26px;
+	
+}
+
+.title h1 {
+	font-size:50px;
+}
+
+.more-info h2 {
+	font-size: 20px;
+}
+}
+
+@media (max-width: 642px) {
+    .img-bg {
+    	z-index:1;
+    	    height: 220px;
+    	        background-position: 50% 20%;
+    }
+
+   
+
+    .icon-bg {
+    	    margin-top: 316px;
+
+    }
+
+    .more-info {
+    	padding-bottom: 70px;
+    }
+
+    a.button.expand {
+	   
+	font-size: 35px;
+	
+}
+    .adopt-btn {
+    	    position: relative;
+    }
+}

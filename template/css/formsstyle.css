@@ -1,0 +1,67 @@
+html {
+	overflow-x: hidden;
+}
+
+h1.text-left{
+	font-size: 42px;
+	margin: 10vh 0 3vh 0;
+}
+
+h1.text-left:after {
+	font-family: FontAwesome;
+	content: "\f004";
+	margin-left: 1.5rem;
+	color:#D93E3E;
+	font-size: 55px;
+}
+
+a.button.large.expand:after {
+	display: none;
+}
+
+.form-button {
+	margin: 2vh;
+	width: 395px;
+	height: 69px;
+	border-radius: 0;
+}
+
+.form-button:hover {
+	background-color: #158FBF;
+}
+
+.form-button h4 {
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 35px;
+}
+
+.formlable {
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	color: #fff;
+	font-size: 17px;
+	padding-bottom: 2px;
+}
+
+.formlable input {
+	font-family: 'Roboto', sans-serif;
+	border-radius: 0;
+	border: solid 2px #fff;
+	background-color: rgba(255,255,255,0);
+	color: #fff;
+	font-size: 16px;
+}
+
+.formlable input:focus {
+	background-color: rgba(255,255,255,0);
+	border: solid 2px #fff;
+	box-shadow:10 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	color: #fff;
+	font-size: 16px;
+}
+
+
+
+
+

@@ -1,0 +1,92 @@
+.loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: #0E5673 no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:contain;
+}
+
+.loader .loaderBear {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 22vh 0 0 0;
+	padding-right: 50px;
+}
+
+.loader .loaderBear .st0 {
+	fill: none;
+	stroke: #FFFFFF;
+	stroke-width: 4.5;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 2200; 
+	stroke-dashoffset: 2200;
+	animation: beardrawing 5s linear forwards;
+	opacity: 0;
+}
+
+
+@keyframes beardrawing {
+	
+	0% {opacity: 0; }
+	20% {opacity: 0.2; }
+	40% {opacity: 0.4; }
+	60% {opacity: 0.6; }
+	80% {	opacity: 0.8; }
+	100% {opacity: 1; stroke-dashoffset: 0; }
+}
+
+
+.loader .loaderName .svgLogoName {
+	margin-top: 6vh;
+	max-height: 15vh;
+}
+
+.loader .loaderName .st1 {
+	fill: #3DBCD9,#BBE2F2,#0E5673;
+	opacity: 0;
+	animation: textfill 3s ease-in forwards;
+}
+
+.loader .loaderName .st1.l1 {
+	animation-delay: 0.3s;
+}
+
+.loader .loaderName .st1.l2 {
+	animation-delay: 0.6s;
+}
+
+.loader .loaderName .st1.l3 {
+	animation-delay: 0.9s;
+}
+
+.loader .loaderName .st1.l4 {
+	animation-delay: 1.2s;
+}
+
+.loader .loaderName .st1.l5 {
+	animation-delay: 1.5s;
+}
+
+
+@keyframes textfill {
+	
+	from { opacity: 0; }
+  to { fill:#fff; opacity: 1; }
+	
+}
+
+
+
+
+
+
+
+
