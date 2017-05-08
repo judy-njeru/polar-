@@ -1,12 +1,12 @@
-var camera, scene, renderer;
-var controls;
-var element, container;
+let camera, scene, renderer;
+let controls;
+let element, container;
 
-var raycaster = new THREE.Raycaster();
-var mouse = new THREE.Vector2(), INTERSECTED;
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
 
-var width  = window.innerWidth;
-var height = window.innerHeight;
+const width  = window.innerWidth;
+const height = window.innerHeight;
 
 init();
 
@@ -21,7 +21,6 @@ function init() {
     camera.position.y = 20;
     camera.position.z = 0;
     scene.add(camera);
-    // camera.lookAt(new THREE.Vector3(0, 0, 0));
 
     // Create render, append canvas to the DOM
     container = document.getElementById('sphere');
@@ -43,41 +42,39 @@ function init() {
     document.body.appendChild(renderer2.domElement);
         
 
-
-
     // Add Light
-    var light = new THREE.AmbientLight( 0x4ffffff ); // soft white light
+    const light = new THREE.AmbientLight( 0x4ffffff ); // soft white light
     scene.add( light );
     
-    var pointLight = new THREE.PointLight( 0xffffff, 10,10 ); // soft white light
+    const pointLight = new THREE.PointLight( 0xffffff, 10,10 ); // soft white light
     pointLight.position.set(0,5,5);
     scene.add( pointLight );
 
-    var loader = new THREE.TextureLoader();
+    const loader = new THREE.TextureLoader();
 
     //add circle geometry as ground
-    var surroundingGeometry = new THREE.CircleBufferGeometry(150,150,30);
+    const surroundingGeometry = new THREE.CircleBufferGeometry(150,150,30);
     loader.load('images/snow-b.png', function(texture) {
-        var surroundingMaterial = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
-        var surroundingBox = new THREE.Mesh( surroundingGeometry, surroundingMaterial );
+        let surroundingMaterial = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
+        let surroundingBox = new THREE.Mesh( surroundingGeometry, surroundingMaterial );
         surroundingBox.position.y = -50
         surroundingBox.rotateX(toRadians(90));
         scene.add( surroundingBox );
     });
 
     //add sphere geometry as background
-    var sphereGeometry = new THREE.SphereGeometry(170, 32, 30);
+    const sphereGeometry = new THREE.SphereGeometry(170, 32, 30);
     loader.load('images/background.jpg', function(texture) {
-        var sphereMaterial = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
-        var sphereMesh = new THREE.Mesh( sphereGeometry, sphereMaterial );
+        let sphereMaterial = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
+        let sphereMesh = new THREE.Mesh( sphereGeometry, sphereMaterial );
         scene.add( sphereMesh );
     });
 
     //add circle geometry as a button images
-    var buttonGeometry = new THREE.CircleGeometry( 16, 40 );
+    const buttonGeometry = new THREE.CircleGeometry( 16, 40 );
     loader.load('images/land-front.png', function(texture) {
-        var buttonMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide } );
-        var buttonPlane = new THREE.Mesh( buttonGeometry, buttonMaterial );
+        let buttonMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide } );
+        let buttonPlane = new THREE.Mesh( buttonGeometry, buttonMaterial );
         buttonPlane.rotateX(toRadians(-90));
         buttonPlane.position.y += -49;
         buttonPlane.position.x += -79;
@@ -101,8 +98,8 @@ function init() {
     });
 
      loader.load('images/sea-front.png', function(texture) {
-        var buttonMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide } );
-        var buttonPlane = new THREE.Mesh( buttonGeometry, buttonMaterial );
+        let buttonMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide } );
+        let buttonPlane = new THREE.Mesh( buttonGeometry, buttonMaterial );
         buttonPlane.rotateX(toRadians(-91));
         buttonPlane.position.x += -10;
         buttonPlane.position.y += -49;
@@ -110,7 +107,7 @@ function init() {
         buttonPlane.userData= { image: "sea.jpg", type: "btnInfo", buttons: buttons.sea };
         scene.add(buttonPlane); 
         
-              //HTML
+        //HTML
         element = document.createElement('div');
         element.innerHTML = 'SEA';
         element.className = 'sea-div';
@@ -126,8 +123,8 @@ function init() {
     });
 
     loader.load('images/threats-front.png', function(texture) {
-        var buttonMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide } );
-        var buttonPlane = new THREE.Mesh( buttonGeometry, buttonMaterial );
+        let buttonMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide } );
+        let buttonPlane = new THREE.Mesh( buttonGeometry, buttonMaterial );
         buttonPlane.rotateX(toRadians(-90));
         buttonPlane.position.y += -49;
         buttonPlane.position.x += 40;
@@ -135,7 +132,7 @@ function init() {
         buttonPlane.userData= { image: "threats.jpg", type: "btnInfo", buttons: buttons.threats };
         scene.add(buttonPlane); 
 
-                  //HTML
+        //HTML
         element = document.createElement('div');
         element.innerHTML = 'THREATS';
         element.className = 'threats-div';
@@ -151,8 +148,8 @@ function init() {
     });
 
     loader.load('images/protective-front.png', function(texture) {
-        var buttonMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide } );
-        var buttonPlane = new THREE.Mesh( buttonGeometry, buttonMaterial );
+        let buttonMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide } );
+        let buttonPlane = new THREE.Mesh( buttonGeometry, buttonMaterial );
         buttonPlane.rotateX(toRadians(-90));
         buttonPlane.position.y += -49;
         buttonPlane.position.x += 70;
@@ -175,35 +172,26 @@ function init() {
         scene2.add(div);
     });
 
-
-           
-//     var bGeometry = new THREE.CircleGeometry( 9, 40 );
-//     var bmaterial = new THREE.MeshBasicMaterial( { color: 0xffffff } );
-// var circle = new THREE.Mesh( bGeometry, bmaterial );
-// circle.rotateX(toRadians(-88));
-// circle.position.y += -49;
-// scene.add( circle );
-//  // console.log(buttonPlane.rotation.x);
-
-    // controls for the surrounding
-    controls = new THREE.OrbitControls(camera);
-    controls.enablePan = true;
-    controls.enableZoom = true; 
-    controls.target.set( 0, 0, 0 );
+// controls for the surrounding
+controls = new THREE.OrbitControls(camera);
+controls.enablePan = true;
+controls.enableZoom = true; 
+controls.target.set( 0, 0, 0 );
       
-    render();
-    function render() {
-        controls.update();
-        // buttonPlane.rotation.x += 0.1;
-        renderer.render(scene, camera);
-        renderer2.render(scene2, camera);
-        requestAnimationFrame(render);
-    }
+render();
+
+function render() {
+    controls.update();
+    renderer.render(scene, camera);
+    renderer2.render(scene2, camera);
+    requestAnimationFrame(render);
+}
 }//close func init
 
-function toRadians (angle) {
-    return angle * (Math.PI / 180);
-}
+const toRadians = angle => angle * (Math.PI / 180);
+
+// const setFromCamera = (raycaster, coords, origin) => raycaster.ray.origin.copy( camera.position );
+//     raycaster.ray.direction.set( coords.x, coords.y, 0.5 ).unproject( camera ).sub( camera.position ).normalize();
 
 function setFromCamera(raycaster, coords, origin){
     raycaster.ray.origin.copy( camera.position );
@@ -211,19 +199,13 @@ function setFromCamera(raycaster, coords, origin){
 }
 
 
-var mouseMoved = false;
-function onMouseDown(event){
-    mouseMoved = false;
-}
+let mouseMoved = false;
 
-function onMouseMove(event){
-    mouseMoved = true;
-}
+const onMouseDown = event => mouseMoved = false;
+
+const onMouseMove = event => mouseMoved = true; 
 
 function onMouseUp(event){
-
-    // TODO
-    // Should we use raycasting now? If not, return.
 
     if ( mouseMoved ) {
         return;
@@ -234,29 +216,20 @@ function onMouseUp(event){
 
     raycaster.setFromCamera( mouse, camera );
     
-    var intersects = raycaster.intersectObjects( scene.children );
+    const intersects = raycaster.intersectObjects( scene.children );
     
     if ( intersects.length > 1 ) {
 
-        var target = intersects[ 0 ].object;
+        const target = intersects[ 0 ].object;
 
         if ( target.userData.type != "btnInfo" ) {
             return;
         }
-
-        if ( target.userData.url)  {
-            // window.location = target.userData.url;
-        }
         
-        var options = target.userData;
+        const options = target.userData;
         displayPano(options);
-        // seaPanorama(options);
-
-        // target.material.color.setHex( Math.random() * 0xffffff );
+    
         target.scale.x +=  0.01;
-        // target.scale.y = Math.random() + 0.5;
-        // target.scale.z = Math.random() + 0.5;
-
     }
 }//close mouseup
 
@@ -264,8 +237,8 @@ document.addEventListener('mousedown', onMouseDown, false);
 document.addEventListener('mousemove', onMouseMove, false);
 document.addEventListener('mouseup', onMouseUp, false); 
 
-
 window.addEventListener( 'resize', onWindowResize, false );
+
 function onWindowResize(){
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
@@ -299,8 +272,16 @@ document.addEventListener('DOMMouseScroll', onMouseWheel, false);
 
 // TODO MOVE!!!
 document.querySelector('#info-window .close-button').addEventListener('click', function(e) {
-    e.target.parentNode.classList.remove('visible');
+    // e.target.parentNode.classList.remove('visible');
+    var el = document.getElementById('info-window');
+    el.classList.toggle('visible');
 });
+
+// document.querySelector('#info-window .close-button').addEventListener('click', function(e) {
+//     // e.target.parentNode.classList.remove('visible');
+//     var el = document.getElementById('info-window');
+//     el.classList.toggle('visible');
+// });
 
 document.querySelector('#info-window .more-info').addEventListener('onMouseWheel', function(e) {
     e.target.parentNode.classList.remove('visible');

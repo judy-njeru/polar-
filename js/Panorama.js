@@ -1,23 +1,11 @@
 
-var camera, scene, renderer;
-var controls;
-var element, container;
-
-var raycaster = new THREE.Raycaster();
-var mouse = new THREE.Vector2(), INTERSECTED;
-
-var width  = window.innerWidth;
-var height = window.innerHeight;
-var animalsDisplayed;
+const formWindow = document.getElementById('form-window');
+const loadForm =()=> formWindow.classList.add('visible');
 
 
 function displayPano (options) {
-
+   
     document.getElementById("content").classList.add("visible");
-
-  
-
-    console.log(options.image);
 
     // Create scene
     scene = new THREE.Scene();
@@ -29,7 +17,7 @@ function displayPano (options) {
     camera.position.z = 35; //35
     
     scene.add(camera);
-    // console.log( camera.lookAt( scene.position ));
+  
 
     // Create render, append canvas to the DOM
     container = document.getElementById('content');
@@ -45,21 +33,19 @@ function displayPano (options) {
 
     options.buttons.forEach(function(button) {
 
-        
         //HTML
-        var btnAnimalOuter = document.createElement('div'); //used to create image div
+        const btnAnimalOuter = document.createElement('div'); //used to create image div
         btnAnimalOuter.classList.add('btn-animal-outer');
         btnAnimalOuter.classList.add(button.className);
         btnAnimalOuter.style.transform = button.transform;
 
 
         //create image and append to image div
-        var btnAnimalInner = document.createElement("div");
+        const btnAnimalInner = document.createElement("div");
         btnAnimalInner.classList.add('btn-animal-inner');
         btnAnimalInner.style.backgroundImage = 'url(' + button.backgroundImage + ')';
         btnAnimalInner.setAttribute('data-content', button.title);
 
-        var formWindow = document.getElementById('form-window');
 
         btnAnimalInner.onclick = function() { 
             var infoWindow = document.getElementById('info-window');
@@ -73,18 +59,11 @@ function displayPano (options) {
             infoWindow.querySelector('.animal-description_2').innerHTML= button.modalInfo.description_2;
             infoWindow.querySelector('.btn-name').innerHTML= button.modalInfo.button_name;
 
-            console.log(button.modalInfo.button_name);
 
             formWindow.querySelector('.animal-image').style.backgroundImage = 'url(' + button.modalInfo.image + ')';
             formWindow.querySelector('.animal-image').style.backgroundPosition = button.modalInfo.position;
             formWindow.querySelector('.btn-name').innerHTML= button.modalInfo.button_name;
             formWindow.querySelector('.adopt-name').innerHTML= button.modalInfo.adopt_name;
-
-
-
-        function loadForm(){
-            formWindow.classList.add('visible');
-        }
         };
          
         btnAnimalOuter.appendChild(btnAnimalInner);
@@ -107,18 +86,18 @@ function displayPano (options) {
     container.appendChild(renderer2.domElement);
 
     // Add Light
-    var light = new THREE.AmbientLight( 0x4ffffff ); // soft white light
+    const light = new THREE.AmbientLight( 0x4ffffff ); // soft white light
     scene.add( light );
-    var pointLight = new THREE.PointLight( 0xffffff, 10,10 ); // soft white light
+    const pointLight = new THREE.PointLight( 0xffffff, 10,10 ); // soft white light
     pointLight.position.set(0,5,5);
     scene.add( pointLight );
 
     // Add the surrounding with the sphere geometry
-    var surroundingGeometry = new THREE.SphereGeometry(400,50,50);
-    var loader = new THREE.TextureLoader();
+    const surroundingGeometry = new THREE.SphereGeometry(400,50,50);
+    const loader = new THREE.TextureLoader();
     loader.load('images/' + options.image, function(texture) {
-        var surroundingMaterial = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
-        var surroundingBox = new THREE.Mesh( surroundingGeometry, surroundingMaterial );
+        let surroundingMaterial = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
+        let surroundingBox = new THREE.Mesh( surroundingGeometry, surroundingMaterial );
         scene.add( surroundingBox );
     });
 
@@ -134,12 +113,10 @@ function displayPano (options) {
    
     function render() {
         controls.update();
-        requestAnimationFrame(render);var config = camera;
- 
+        requestAnimationFrame(render);
         renderer.render(scene, camera);
         renderer2.render(scene2, camera);
     }
-
 }
 
 

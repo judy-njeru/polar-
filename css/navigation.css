@@ -15,11 +15,12 @@
 
 .navigate {
 	position: fixed;
-	top: -80px;
-	left: 170vh;
+	top: 5%;
+	left: 88%;
 	width: 100px;
 	height: 120vh;
 	background: url(../images/navlines-smaller.png) no-repeat;
+	z-index: 9998;
 }
 
 #nav.visible {
