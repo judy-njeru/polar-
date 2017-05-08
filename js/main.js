@@ -31,7 +31,7 @@ function init() {
     container.appendChild(element);
 
 
-     //CSS3D Scene
+    //CSS3D Scene
     scene2 = new THREE.Scene();
     
     

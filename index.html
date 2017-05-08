@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Polar</title>
+	<!-- Google Analytics -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+   
+    <title>Polar - Arctic Protection Program</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="arctic,polar,polarbear,animals">
+    <meta name="description" content="Polar is an arctic protection program. We aim to educate and inform people about the dangers threatning the animal life at the arctic.">
         
     <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -11,49 +25,58 @@
     <link rel="stylesheet" type="text/css" href="css/infostyle.css">
     <link rel="stylesheet" type="text/css" href="css/formsstyle.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
         
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
-        
-        
+
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/loader.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    
 </head>
 <style>
-    .animal-image {
-       background-size: cover;
- /* background-position: 0% 50%;*/
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: block;
-  top: 0;
-  left: 0;
-  padding: 0;
-    }
+	.animal-image {
+		background-size: cover;
+		/* background-position: 0% 50%;*/
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		padding: 0;
+   }
 
-    .animal-icon {
-            width: 300px;
-    height: 150px;
-    background-position: 39%, 27%;
-    background-size: 67%;
-    background-repeat: no-repeat;
-    }
+	.animal-icon {
+		width: 300px;
+		height: 160px;
+		background-position: 39%, 27%;
+		background-size: 67%;
+		background-repeat: no-repeat;
+	}
 
-    .close {
+  .close {
     position: fixed;
     top: 0;
     right: 0;
     height: 40px;
     width: 40px;
     background-color: red;
-}
+	}
 
-#form-window {
+	#form-window {
     display: none;
-}
+	}
+	
+	#nav {
+		display: none;
+	}
+	
 </style>
 <script>
     function loadForm(){
@@ -61,9 +84,155 @@
             formWindow.classList.add('visible');
             console.log('hi');
     }
+	
+//		function loadNav(){
+//			let lineNav = document.getElementById('nav');
+//					lineNav.classList.add('visible');
+//		}
 </script>
-<body>
-    <div class="shadow"><div id="sphere"></div></div>
+
+   
+   <body>
+   	<div class="loader">
+			
+			<div class="loaderBear">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="100px" y="100px"
+					 viewBox="153 61 494 355" style="enable-background:new 153 61 494 355; height:30vh;" xml:space="preserve">
+				<g>
+					<path class="st0" d="M608.8,292.8c0,0-7.7,30.7-10.1,36.5c-1.9,5.8-13.9,25.9-13.9,25.9s6.7,15.8,7.7,18.7
+						c1,2.9-13.9,9.1-15.8,13.9c-1.9,4.8,2.9,9.1,21.6,7.7c18.7-1,26.9,1,31.7-18.7C635.7,357.1,643.8,334.1,608.8,292.8z"/>
+					<path class="st0" d="M332.8,273.1l-12-36.5c-1.9-5.3-6.7-9.1-12.5-9.1h-25.9c0,0,5.8,23.5,12,44.6c5.8,20.6,13.9,31.7,13.9,31.7
+						L332.8,273.1z"/>
+					<path class="st0" d="M346.7,373c-3.8,6.7-3.8,12-13.9,18.7c-10.1,6.7,7.7,3.4,33.6,4.3c0,0,12-3.8,12-13.9
+						c0-10.1-9.1-34.1-9.1-34.1S350.6,365.8,346.7,373z"/>
+					<path class="st0" d="M233.4,104.6c0,0-7.2-12-16.8-9.6c-9.6,2.4-3.4,23-3.4,23S219,107.5,233.4,104.6z"/>
+					<path class="st0" d="M604.5,200.6C588.2,156,558.9,86.9,421.1,97c0,0-22.6-2.9-36.5-14.9s-39.4-13-70.1,11c0,0-13,8.6-57.1,13.9
+						c0,0-25.9,1-35,11.5c-9.1,10.6-25,22.6-30.7,34.6c-1.4,3.4,0,12.5,0,12.5l-24.5,19.2c-2.4,1.9-2.9,5.8-1.4,8.2
+						c4.3,6.2,12,23.5,18.7,25c6.2,1.4,24.5,3.4,43.7,1c14.4-1.4,58.6-1.4,85.9-1c8.2,0,15.4,5.3,17.8,13.4l12,43.2
+						c0,0-15.8,26.9-33.6,44.6c-17.8,17.8-16.8,41.8-11,53.3c5.8,12,27.8,25,39.4,0c12-25,45.6-37.4,55.7-55.2
+						c9.6-17.8,29.8-42.7,25.4-73.9l0.5-13.4c0,0,10.6,20.2,5.3,39.4c-4.8,19.2-4.8,19.2-4.8,19.2s59.5,17.8,72,12
+						c0,0,1.9-31.7,32.6-61.4c0,0-29.8,49.4-25.9,75.4c3.8,25.9,1,38.4-2.9,53.3c-3.8,14.9-10.6,19.2-10.6,19.2s-19.2,2.9-18.2,13.4
+						c1,11,69.6,4.8,69.6,4.8s10.6-1.9,10.6-9.1c0-7.2,30.7-28.8,47.5-86.4C613.1,251,620.3,245.3,604.5,200.6z M271.4,149.3
+						c0,0-3.8-15.8-17.3-19.2c0,0,3.8-14.9,12-12C274.2,121,272.8,141.1,271.4,149.3z"/>
+				</g>
+				</svg>
+			</div>
+			
+			<div class="loaderName wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0" data-wow-offset="20" >
+				<svg version="1.1" id="Layer_1" class="svgLogoName"
+					 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-210 267 378 67"
+					 style="enable-background:new -210 267 378 67;" xml:space="preserve">
+				
+
+				<g>
+					<g>
+						<path class="st1 l1" d="M-123.7,280.6c1.5,0,3,0.2,4.4,0.6c1.4,0.4,2.7,1,3.9,1.7c1.2,0.7,2.3,1.6,3.3,2.6c1,1,1.9,2.1,2.6,3.4
+							c0.7,1.2,1.3,2.5,1.7,4c0.4,1.4,0.6,2.9,0.6,4.4c0,2.3-0.4,4.4-1.3,6.4c-0.9,2-2,3.8-3.5,5.3c-1.5,1.5-3.3,2.7-5.3,3.5
+							c-2,0.9-4.2,1.3-6.4,1.3h-8.3v8.3h-8.3v-41.4H-123.7 M-132,305.5h8.3c1.1,0,2.2-0.2,3.2-0.6c1-0.4,1.9-1,2.6-1.8
+							c0.8-0.8,1.3-1.6,1.8-2.6c0.4-1,0.6-2.1,0.6-3.2c0-1.1-0.2-2.2-0.6-3.2c-0.4-1-1-1.9-1.8-2.6c-0.8-0.8-1.6-1.3-2.6-1.8
+							c-1-0.4-2.1-0.6-3.2-0.6h-8.3V305.5 M-123.7,278.6h-16.6h-2v2V322v2h2h8.3h2v-2v-6.3h6.3c2.5,0,5-0.5,7.2-1.5c2.2-1,4.2-2.3,5.9-4
+							c1.7-1.7,3-3.7,4-5.9c1-2.3,1.5-4.7,1.5-7.2c0-1.7-0.2-3.4-0.7-4.9c-0.4-1.6-1.1-3.1-1.9-4.4c-0.8-1.4-1.8-2.6-2.9-3.8
+							c-1.1-1.1-2.4-2.1-3.7-2.9c-1.4-0.8-2.9-1.4-4.4-1.9C-120.4,278.8-122,278.6-123.7,278.6L-123.7,278.6z M-130,290.9h6.3
+							c0.9,0,1.7,0.2,2.4,0.5c0.8,0.3,1.4,0.8,2,1.4c0.6,0.6,1,1.2,1.4,2c0.3,0.8,0.5,1.6,0.5,2.4c0,0.9-0.2,1.7-0.5,2.4
+							c-0.3,0.8-0.8,1.4-1.4,2c-0.6,0.6-1.2,1-2,1.4c-0.8,0.3-1.5,0.5-2.4,0.5h-6.3V290.9L-130,290.9z"/>
+					</g>
+					<g>
+						<path class="st1 l2" d="M-71.1,280.1c2,0,3.9,0.3,5.7,0.8c1.8,0.5,3.5,1.2,5.1,2.1c1.6,0.9,3,2,4.3,3.3c1.3,1.3,2.4,2.8,3.3,4.3
+							c0.9,1.6,1.6,3.3,2.1,5.1c0.5,1.8,0.8,3.7,0.8,5.7c0,2-0.3,3.9-0.8,5.7c-0.5,1.8-1.2,3.5-2.1,5.1c-0.9,1.6-2,3-3.3,4.3
+							c-1.3,1.3-2.8,2.4-4.3,3.4c-1.6,0.9-3.3,1.7-5.1,2.2c-1.8,0.5-3.7,0.8-5.7,0.8s-3.9-0.3-5.7-0.8c-1.8-0.5-3.5-1.2-5.1-2.2
+							c-1.6-0.9-3-2.1-4.3-3.4c-1.3-1.3-2.4-2.8-3.4-4.3c-0.9-1.6-1.7-3.3-2.2-5.1c-0.5-1.8-0.8-3.7-0.8-5.7c0-2,0.3-3.9,0.8-5.7
+							c0.5-1.8,1.2-3.5,2.2-5.1c0.9-1.6,2.1-3,3.4-4.3c1.3-1.3,2.8-2.4,4.3-3.3c1.6-0.9,3.3-1.6,5.1-2.1
+							C-74.9,280.4-73,280.1-71.1,280.1 M-71.1,314.6c1.8,0,3.5-0.3,5.1-1c1.6-0.7,3-1.6,4.2-2.8c1.2-1.2,2.1-2.6,2.8-4.2
+							c0.7-1.6,1-3.3,1-5.1c0-1.8-0.3-3.5-1-5.1c-0.7-1.6-1.6-3-2.8-4.2c-1.2-1.2-2.6-2.1-4.2-2.8c-1.6-0.7-3.3-1-5.1-1
+							c-1.8,0-3.5,0.3-5.1,1c-1.6,0.7-3,1.6-4.2,2.8c-1.2,1.2-2.1,2.6-2.8,4.2c-0.7,1.6-1,3.3-1,5.1c0,1.8,0.3,3.5,1,5.1
+							c0.7,1.6,1.6,3,2.8,4.2c1.2,1.2,2.6,2.1,4.2,2.8C-74.6,314.3-72.9,314.6-71.1,314.6 M-71.1,278.1c-2.1,0-4.2,0.3-6.2,0.8
+							c-2,0.6-3.8,1.3-5.6,2.3c-1.7,1-3.3,2.2-4.8,3.7c-1.4,1.4-2.7,3-3.7,4.7c-1,1.7-1.8,3.6-2.4,5.6c-0.6,2-0.8,4.1-0.8,6.2
+							c0,2.1,0.3,4.2,0.8,6.2c0.6,2,1.4,3.9,2.4,5.6c1,1.7,2.2,3.3,3.7,4.7c1.4,1.4,3,2.7,4.7,3.7c1.7,1,3.6,1.8,5.6,2.4
+							c2,0.6,4.1,0.8,6.2,0.8c2.1,0,4.2-0.3,6.2-0.8c2-0.6,3.9-1.3,5.6-2.4c1.7-1,3.3-2.2,4.7-3.7c1.4-1.4,2.7-3,3.7-4.8
+							c1-1.7,1.8-3.6,2.3-5.6c0.6-2,0.8-4.1,0.8-6.2c0-2.1-0.3-4.2-0.8-6.2c-0.6-2-1.3-3.9-2.3-5.6c-1-1.7-2.2-3.3-3.7-4.7
+							c-1.4-1.4-3-2.7-4.7-3.7c-1.7-1-3.6-1.8-5.6-2.4C-66.8,278.4-68.9,278.1-71.1,278.1L-71.1,278.1z M-71.1,312.6
+							c-1.5,0-3-0.3-4.3-0.9c-1.4-0.6-2.6-1.4-3.6-2.4c-1-1-1.8-2.2-2.4-3.6c-0.6-1.3-0.9-2.8-0.9-4.3c0-1.5,0.3-3,0.9-4.3
+							c0.6-1.4,1.4-2.6,2.4-3.6c1-1,2.2-1.8,3.6-2.4c1.3-0.6,2.8-0.9,4.3-0.9c1.5,0,3,0.3,4.3,0.9c1.4,0.6,2.6,1.4,3.6,2.4
+							c1,1,1.8,2.2,2.4,3.6c0.6,1.3,0.9,2.8,0.9,4.3c0,1.5-0.3,3-0.9,4.3c-0.6,1.4-1.4,2.6-2.4,3.6c-1,1-2.2,1.8-3.6,2.4
+							C-68.1,312.3-69.5,312.6-71.1,312.6L-71.1,312.6z"/>
+					</g>
+					<g>
+						<path class="st1 l3" d="M-23.9,280.6v33.1h20.7v8.3h-29v-41.4H-23.9 M-21.9,278.6h-2h-8.3h-2v2V322v2h2h29h2v-2v-8.3v-2h-2h-18.7
+							v-31.1V278.6L-21.9,278.6z"/>
+					</g>
+					<g>
+						<path class="st1 l4" d="M29.3,280.6c2.3,0,4.4,0.4,6.4,1.3c2,0.9,3.8,2,5.3,3.5c1.5,1.5,2.7,3.3,3.5,5.3c0.9,2,1.3,4.2,1.3,6.4V322
+							h-8.3v-8.3H21v8.3h-8.3v-24.8c0-2.3,0.4-4.4,1.3-6.4c0.9-2,2-3.8,3.5-5.3c1.5-1.5,3.2-2.7,5.3-3.5S27,280.6,29.3,280.6 M21,305.5
+							h16.6v-8.3c0-1.1-0.2-2.2-0.6-3.2c-0.4-1-1-1.9-1.8-2.6c-0.8-0.8-1.6-1.3-2.6-1.8c-1-0.4-2.1-0.6-3.2-0.6c-1.1,0-2.2,0.2-3.2,0.6
+							c-1,0.4-1.9,1-2.6,1.8c-0.8,0.8-1.3,1.6-1.8,2.6c-0.4,1-0.6,2.1-0.6,3.2V305.5 M29.3,278.6c-2.6,0-5,0.5-7.2,1.5
+							c-2.2,1-4.2,2.3-5.9,4c-1.7,1.7-3,3.7-4,5.9c-1,2.3-1.5,4.7-1.5,7.2V322v2h2H21h2v-2v-6.3h12.6v6.3v2h2h8.3h2v-2v-24.8
+							c0-2.6-0.5-5-1.5-7.2c-1-2.2-2.3-4.2-4-5.9c-1.7-1.7-3.7-3-5.9-4C34.3,279.1,31.9,278.6,29.3,278.6L29.3,278.6z M23,303.5v-6.3
+							c0-0.9,0.2-1.7,0.5-2.4c0.3-0.8,0.8-1.4,1.4-2s1.2-1,2-1.3c0.8-0.3,1.6-0.5,2.4-0.5s1.7,0.2,2.4,0.5c0.8,0.3,1.4,0.8,2,1.4
+							c0.6,0.6,1,1.2,1.3,2c0.3,0.8,0.5,1.6,0.5,2.4v6.3H23L23,303.5z"/>
+					</g>
+					<g>
+						<path class="st1 l5" d="M81.7,280.6c1.5,0,3,0.2,4.4,0.6c1.4,0.4,2.7,1,3.9,1.7c1.2,0.7,2.3,1.6,3.3,2.6c1,1,1.9,2.1,2.6,3.4
+							c0.7,1.2,1.3,2.5,1.7,4c0.4,1.4,0.6,2.9,0.6,4.4c0,1.4-0.2,2.8-0.5,4.2c-0.4,1.3-0.9,2.6-1.5,3.8c-0.7,1.2-1.5,2.3-2.4,3.3
+							c-1,1-2,1.9-3.2,2.7l4.6,10.8h-8.8l-3.6-8.3l-9.3,0.1v8.3h-8.3v-41.4H81.7 M73.5,305.5h8.3c1.1,0,2.2-0.2,3.2-0.6
+							c1-0.4,1.9-1,2.6-1.8c0.8-0.8,1.3-1.6,1.8-2.6c0.4-1,0.6-2.1,0.6-3.2c0-1.1-0.2-2.2-0.6-3.2c-0.4-1-1-1.9-1.8-2.6
+							c-0.8-0.8-1.6-1.3-2.6-1.8c-1-0.4-2.1-0.6-3.2-0.6h-8.3V305.5 M81.7,278.6H65.2h-2v2V322v2h2h8.3h2v-2v-6.3l6,0l3.1,7.1L85,324
+							h1.3h8.8h3l-1.2-2.8l-4-9.3c0.8-0.6,1.5-1.3,2.2-2c1.1-1.1,2-2.4,2.7-3.8c0.7-1.3,1.3-2.8,1.7-4.3c0.4-1.5,0.6-3.1,0.6-4.7
+							c0-1.7-0.2-3.3-0.7-4.9c-0.4-1.6-1.1-3-1.9-4.4c-0.8-1.4-1.8-2.6-2.9-3.8c-1.1-1.1-2.4-2.1-3.7-2.9c-1.4-0.8-2.9-1.4-4.4-1.9
+							C85.1,278.8,83.4,278.6,81.7,278.6L81.7,278.6z M75.5,290.9h6.3c0.9,0,1.7,0.2,2.4,0.5c0.8,0.3,1.4,0.8,2,1.4c0.6,0.6,1,1.2,1.3,2
+							c0.3,0.8,0.5,1.6,0.5,2.4s-0.2,1.7-0.5,2.4c-0.3,0.8-0.8,1.4-1.4,2c-0.6,0.6-1.2,1-2,1.4c-0.8,0.3-1.5,0.5-2.4,0.5h-6.3V290.9
+							L75.5,290.9z"/>
+					</g>
+				</g>
+				</svg>
+
+				
+			</div>
+			
+		</div>
+		<a href="index.html"><div class="logoimage"></div></a>
+		<div id="sound"></div>
+
+		<div class="mutebtn">
+			<button id="playSound" class="on" type="button">
+				<img src="images/soundon.png"></button>
+			<button id="pauseSound" class="off" type="button">
+				<img src="images/soundoff.png"></button>
+		</div>
+   
+    <div class="shadow">
+    	<div id="sphere"></div>	
+    </div>
+    
+    <div id="nav" class="navigate view show">
+<!--			<img class="navline" src="images/navlines-smaller.png">-->
+					<ul>
+						<li>
+							<a href="#LandPanorama" class="btn-1">
+								<span class="title1">Land</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#SeaPanorama" class="btn-2">
+								<span class="title2">Sea</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#ThreatsPanorama" class="btn-3">
+								<span class="title3">Threats</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#ProtectedPanorama" class="btn-4">
+								<span class="title4">Protected Areas</span>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+    
     <div id="content"></div>
     <div id="info-window">
         <div class="banner">
@@ -122,13 +291,14 @@
         </div><!-- close banner-->
     </div><!-- close form-window-->
 
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> 
 <script src="js/three.min.js"></script>
 <script src="js/CSS3DRenderer.js"></script>
 <script src="js/OrbitControls.js"></script>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
 <script src="js/Panorama.js"></script>
+<script src="js/sound.js"></script>
 
 </body>
 </html>

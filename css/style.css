@@ -3,6 +3,18 @@ body {
   overflow: hidden;
 }
 
+.logoimage{
+	position: fixed;
+	top: 0;
+	left: 15px; 
+	background-image: url(../images/logo.png);
+	background-size: cover;
+	height: 100px;
+	width: 329px;
+	background-repeat: no-repeat;
+	z-index: 10001;
+}
+
 .shadow {
   background-color: #000000;
   opacity:0.9;
@@ -142,7 +154,7 @@ body {
     background-color: #fff;
     padding: 2rem;
     display: none;
-    z-index: 9999;
+    z-index: 10001;
 }
 
 /* Info window */
@@ -155,7 +167,7 @@ body {
   background-color:#fff;
   padding:2rem;
   display:none;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 
@@ -163,6 +175,7 @@ body {
 #info-window.visible {
   display:block;
 }
+
 #form-window.visible {
   display:block;
 }
