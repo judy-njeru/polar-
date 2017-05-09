@@ -30,7 +30,6 @@ function displayPano (options) {
     //CSS3D Scene
     scene2 = new THREE.Scene();
 
-
     options.buttons.forEach(function(button) {
 
         //HTML
@@ -43,7 +42,9 @@ function displayPano (options) {
         //create image and append to image div
         const btnAnimalInner = document.createElement("div");
         btnAnimalInner.classList.add('btn-animal-inner');
+        btnAnimalInner.classList.add(button.animalClassName);
         btnAnimalInner.style.backgroundImage = 'url(' + button.backgroundImage + ')';
+        btnAnimalInner.style.backgroundPosition = button.position;
         btnAnimalInner.setAttribute('data-content', button.title);
 
 
@@ -64,7 +65,8 @@ function displayPano (options) {
             formWindow.querySelector('.animal-image').style.backgroundPosition = button.modalInfo.position;
             formWindow.querySelector('.btn-name').innerHTML= button.modalInfo.button_name;
             formWindow.querySelector('.adopt-name').innerHTML= button.modalInfo.adopt_name;
-        };
+
+        }; // close btnAnimalInner function
          
         btnAnimalOuter.appendChild(btnAnimalInner);
 
@@ -76,7 +78,7 @@ function displayPano (options) {
         div.rotation.y = Math.PI;
         scene2.add(div);
 
-    });
+    }); // close for each function
 
     //CSS3D Renderer
     renderer2 = new THREE.CSS3DRenderer();
@@ -117,7 +119,7 @@ function displayPano (options) {
         renderer.render(scene, camera);
         renderer2.render(scene2, camera);
     }
-}
+} // close display panorama function
 
 
 window.addEventListener( 'resize', onWindowResize, false );

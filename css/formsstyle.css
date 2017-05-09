@@ -1,5 +1,5 @@
 html {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 h1.text-left{
@@ -77,8 +77,5 @@ a.button.large.expand:after {
 	color: #fff;
 	font-size: 16px;
 }
-
-
-
 
 

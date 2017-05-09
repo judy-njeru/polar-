@@ -129,7 +129,7 @@ function init() {
         buttonPlane.position.y += -49;
         buttonPlane.position.x += 40;
         buttonPlane.position.z += 38;
-        buttonPlane.userData= { image: "threats.jpg", type: "btnInfo", buttons: buttons.threats };
+        buttonPlane.userData= { image: "threats-bg.jpg", type: "btnInfo", buttons: buttons.threats };
         scene.add(buttonPlane); 
 
         //HTML
@@ -277,12 +277,7 @@ document.querySelector('#info-window .close-button').addEventListener('click', f
     el.classList.toggle('visible');
 });
 
-// document.querySelector('#info-window .close-button').addEventListener('click', function(e) {
-//     // e.target.parentNode.classList.remove('visible');
-//     var el = document.getElementById('info-window');
-//     el.classList.toggle('visible');
-// });
 
-document.querySelector('#info-window .more-info').addEventListener('onMouseWheel', function(e) {
-    e.target.parentNode.classList.remove('visible');
+document.querySelector('#info-window').addEventListener('onMouseWheel', function() {
+    document.removeEventListener('mouseup', onMouseUp); 
 });

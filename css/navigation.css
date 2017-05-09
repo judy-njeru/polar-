@@ -49,27 +49,27 @@ span.title4{
 	backface-visibility: hidden;
 }
 
-.navigate li a.btn-1 {
+.navigate li button.btn-1 {
 	top: 190px;
 	left: -10px;
 }
 
-.navigate li a.btn-2 {
+.navigate li button.btn-2 {
 	top: 342px;
 	left: 39px;
 }
 
-.navigate li a.btn-3{
+.navigate li button.btn-3{
 	top: 467px;
 	left: -10px;
 }
 
-.navigate li a.btn-4 {
+.navigate li button.btn-4 {
 	top: 590px;
 	left: 36px;
 }
 
-.navigate li a {
+.navigate li button {
 	font-family: 'Fjalla One', sans-serif;
 	color: #fff;
 	font-size: 18px;
@@ -79,16 +79,16 @@ span.title4{
 	backface-visibility: hidden;
 }
 
-li a {
+li button{
 	text-transform: uppercase;
 }
 
-.navigate li a span {
+.navigate li button span {
 	white-space: nowrap;
 	display: block;
 }
 
-.navigate li a:before {
+.navigate li button:before {
 	content: '';
 	position: absolute;
 	display: block;
@@ -100,11 +100,11 @@ li a {
 	backface-visibility: hidden;
 }
 
-.navigate li a:hover::before {
+.navigate li button:hover::before {
 	background-color: #56CCF2;
 }
 
-.navigate li a:after {
+.navigate li button:after {
 	content: '';
 	position: absolute;
 	top: 9px;

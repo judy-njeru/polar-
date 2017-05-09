@@ -5,7 +5,8 @@ const buttons = {
             'backgroundImage': '/images/polarbear2.jpg',
             'title': 'Polar bear',
             'className':'polarbear',
-            'transform': 'translate(-50%, -50%) matrix3d(1.8, 0, 4.5555, 0, 0, 1.8, 0, 0, 0, 0, 1, 1, 1841, 9, 1812, 1.4) !important',
+            'animalClassName':'polarbearInner',
+            'position': '14% 50%',
             'modalInfo': {
                 'title': 'Polar bear',
                 'description_1': 'Majestic creature of the far north, the polar bear is the worlds largest terrestrial carnivore.',
@@ -21,7 +22,8 @@ const buttons = {
             'backgroundImage': '/images/smallerimages/arcticfox2-smaller.jpg',
             'title': 'Arctic Fox',
             'className': 'arcticfox',
-            'transform': 'translate(-13%, -50%) matrix3d(-1, 0, -1, 0, 0, -1.3, 0, 0, 0, 0, -1, 0, 277, 9, -1000, 1) !important',
+            'animalClassName':'arcticFoxInner',
+            'position': '14% 50%',
             'modalInfo': {
                 'title': 'Arctic Fox',
                 'description_1': 'A true animal of the far north, the Arctic fox lives its whole life above the northern tree line in the Arctic tundra.',
@@ -37,13 +39,14 @@ const buttons = {
             'backgroundImage': '/images/smallerimages/wolf-smaller.jpg',
             'title': 'Arctic Wolf',
             'className': 'arcticwolf',
-            'transform': 'translate(-13%, -50%) matrix3d(-1, 0, -1, 0, 0, -1.3, 0, 0, 0, 0, -1, 0, 277, 9, -1000, 1) !important',
+            'animalClassName':'arcticWolfInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Arctic Wolf',
                 'description_1': 'The Arctic Wolf (also sometimes called the Polar Wolf or White Wolf) is an animal of the far north. It lives its whole life above the northern tree line in the Arctic tundra, roaming across North America and Greenland but not extending into mainland Europe or Asia.',
                 'description_2': 'Arctic wolves are carnivorous hunters. By nature they help to control the populations of other animals in the region like the musk ox, caribou and Arctic hares.',
                 'image': '/images/wolf.jpg',
-                'position': '60% 50%',
+                'position': '66% 50%',
                 'icon': '/svg/wolf.png',
                 'adopt_name': 'NAME YOUR ARCTIC WOLF*',
                 'button_name': 'ADOPT AN ARCTIC WOLF'
@@ -53,7 +56,8 @@ const buttons = {
             'backgroundImage': '/images/smallerimages/ermine-smaller.jpg',
             'title': 'Ermine',
             'className': 'ermine',
-            'transform': 'translate(-13%, -50%) matrix3d(-1, 0, -1, 0, 0, -1.3, 0, 0, 0, 0, -1, 0, 277, 9, -1000, 1) !important',
+            'animalClassName':'ermineInner',
+            'position': '76% 50%',
             'modalInfo': {
                 'title': 'Ermine',
                 'description_1': 'Ermine is small mammal that belongs to the family of weasels. It can be found in subarctic and arctic parts of the North America, Europe and Asia. Ermine inhabits woodlands, marshes, scrublands and areas near the rivers.',
@@ -72,7 +76,8 @@ const buttons = {
             'backgroundImage': '/images/seaotter.jpeg',
             'title': 'Sea Otter',
             'className':'seaotter',
-            'transform': 'translate(-50%, -50%) matrix3d(1.8, 0, 4.5555, 0, 0, 1.8, 0, 0, 0, 0, 1, 1, 1841, 9, 1812, 1.4) !important',
+            'animalClassName':'seaOtterInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Sea Otter',
                 'description_1': 'Sea otters spend much of their lives in the water and can dive up to 330 feet when foraging for food. They sometimes rest in coastal kelp forests, often draping the kelp over their bodies to keep from drifting away. Sea otters are also one of the few mammals other than primates known to use tools.',
@@ -88,7 +93,8 @@ const buttons = {
             'backgroundImage': '/images/narwhal2-smaller.jpg',
             'title': 'Narwhal',
             'className': 'narwhal',
-            'transform': 'translate(-13%, -50%) matrix3d(-1, 0, -1, 0, 0, -1.3, 0, 0, 0, 0, -1, 0, 277, 9, -1000, 1) !important',
+            'animalClassName':'narwhalInner',
+            'position': '50% 50%',
             'modalInfo': {
                 'title': 'Narwhal',
                 'description_1': 'The narwhal looks like a cross between a whale and a unicorn with its long, spiraled tusk jutting from its head. The tusk, which can grow as long as 10 feet, is actually an enlarged tooth.',
@@ -104,7 +110,8 @@ const buttons = {
             'backgroundImage': '/images/orca1-smaller.jpg',
             'title': 'Orca',
             'className': 'orca',
-            'transform': 'translate(-13%, -50%) matrix3d(-1, 0, -1, 0, 0, -1.3, 0, 0, 0, 0, -1, 0, 277, 9, -1000, 1) !important',
+            'animalClassName':'orcaInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Orca',
                 'description_1': 'Orcas are the largest of all carnivores on earth that feed on a wide variety of foods. They are found in almost all oceans, from the tropics to the Arctic and Antarctic where they will go deep into the pack-ice to hunt seals and penguins.',
@@ -120,7 +127,8 @@ const buttons = {
             'backgroundImage': '/images/walrus2-smaller.jpg',
             'title': 'Walrus',
             'className': 'walrus',
-            'transform': 'translate(-13%, -50%) matrix3d(-1, 0, -1, 0, 0, -1.3, 0, 0, 0, 0, -1, 0, 277, 9, -1000, 1) !important',
+            'animalClassName':'walrusInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Walrus',
                 'description_1': 'The walrus is easily recognised by its sheer size and magnificent tusks. It is a keystone species in Arctic marine ecosystems. ',
@@ -138,7 +146,8 @@ const buttons = {
             'backgroundImage': '/images/oil2-smaller.jpg',
             'title': 'Oil & Gas',
             'className':'oil_gas',
-            'transform': 'translate(-50%, -50%) matrix3d(1.8, 0, 4.5555, 0, 0, 1.8, 0, 0, 0, 0, 1, 1, 1841, 9, 1812, 1.4) !important',
+            'animalClassName':'oilGasInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Oil & Gas',
                 'description_1': 'Much of the world’s untapped oil reserves lie offshore, in the Arctic biologically productive waters. Oil spills can kill birds, fish and marine mammals, as well as the smaller organisms that provide food for these larger species. There is no proven technology that allows for the complete containment of oil spilled in the marine environment.',
@@ -153,7 +162,8 @@ const buttons = {
             'backgroundImage': '/images/globalwarming-smaller.jpg',
             'title': 'Climate Change',
             'className':'climate_change',
-            'transform': 'translate(-50%, -50%) matrix3d(1.8, 0, 4.5555, 0, 0, 1.8, 0, 0, 0, 0, 1, 1, 1841, 9, 1812, 1.4) !important',
+            'animalClassName':'climateInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Climate Change',
                 'description_1': 'Temperatures in the Arctic are rising at twice the rate of the rest of the world. Warming temperatures are linked to many changes in the Arctic, including reduced sea ice, melting permafrost and rising sea levels.',
@@ -168,7 +178,8 @@ const buttons = {
             'backgroundImage': '/images/shipping-smaller.jpg',
             'title': 'Shipping',
             'className':'shipping',
-            'transform': 'translate(-50%, -50%) matrix3d(1.8, 0, 4.5555, 0, 0, 1.8, 0, 0, 0, 0, 1, 1, 1841, 9, 1812, 1.4) !important',
+            'animalClassName':'shippingInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Shipping',
                 'description_1': 'With longer open water seasons and growing pressures of globalization, more of the Arctic’s waterways are opening up for travel and commercial transportation. Increasing ship numbers pose the threat of shipwrecks, oil spills and the introduction of non-native species.',
@@ -183,7 +194,8 @@ const buttons = {
             'backgroundImage': '/images/mining.jpg',
             'title': 'Mining',
             'className':'mining',
-            'transform': 'translate(-50%, -50%) matrix3d(1.8, 0, 4.5555, 0, 0, 1.8, 0, 0, 0, 0, 1, 1, 1841, 9, 1812, 1.4) !important',
+            'animalClassName':'miningInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Mining',
                 'description_1': 'Some Arctic regions contain valuable minerals, including coal, gold and copper. One such area is at the headwaters of several rivers that feed into Bristol Bay. A project – Pebble Mine – proposed for that region would be the largest open-pit mine in North America. ',
@@ -200,7 +212,8 @@ const buttons = {
             'backgroundImage': '/images/protected.jpeg',
             'title': 'Lemmenjoki National Park',
             'className':'lemmenjoki',
-            'transform': 'translate(-50%, -50%) matrix3d(1.8, 0, 4.5555, 0, 0, 1.8, 0, 0, 0, 0, 1, 1, 1841, 9, 1812, 1.4) !important',
+            'animalClassName':'lemmenInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Lemmenjoki National Park',
                 'description_1': 'Lemmenjoki National Park is situated in area of municipalities of Inari and Kittilä, Lapland, in Northern Finland. It was founded in 1956 and has since been expanded twice, making it the biggest national park of Finland and one of the largest in Europe.',
@@ -215,7 +228,8 @@ const buttons = {
             'backgroundImage': '/images/protected2-smaller.jpg',
             'title': 'Great Arctic State Nature Reserve',
             'className':'arctic_nature',
-            'transform': 'translate(-50%, -50%) matrix3d(1.8, 0, 4.5555, 0, 0, 1.8, 0, 0, 0, 0, 1, 1, 1841, 9, 1812, 1.4) !important',
+            'animalClassName':'arcticInner',
+            'position': '66% 50%',
             'modalInfo': {
                 'title': 'Great Arctic State Nature Reserve',
                 'description_1': 'The Great Arctic State Nature Reserve was founded on May 11, 1993 by Resolution No.431 of the Government of the Russian Federation, and is one of the largest wildernesses on earth. The Nature Reserves in Russia are known as zapovedniks.',

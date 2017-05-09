@@ -58,13 +58,15 @@ body {
 .img-info {
 	background-color: #0E5673;
 	width: 100%;
-	height:auto;
+	height:100%;
 	position: fixed;
 	top: 0;
 	right: 0;
 	min-height: 100vh;
 	padding:0;
 	text-align: center;
+	overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .row.icon-bg.align-center {
@@ -112,7 +114,6 @@ body {
 }
 
 .row.align-center.adopt-btn {
-	position: relative;
 	right: 0;
 	bottom: 0;
 	font-size: 2px;

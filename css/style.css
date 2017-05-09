@@ -103,8 +103,8 @@ body {
   transform: scale(1.1); 
 }
 
-.btn-animal-outer.polarbear, .btn-animal-outer.seaotter, .btn-animal-outer.oil_gas , .btn-animal-outer.arctic_nature{
-    transform: translate(903%, -46%) matrix3d(2.4, 0, -3.4445, 0, 0, -4, 0, 0, 0, 0, -1, 0, -2540, 9, 12805, 1) !important;
+.btn-animal-outer.polarbear, .btn-animal-outer.seaotter, .btn-animal-outer.oil_gas {
+      transform: translate(90%, -45%) matrix3d(3.4, 0, -4.4445, 0, 0, -5, 0, 0, 0, 0, -1, 0, 7244, 3, 4820, 3) !important;
 }
 
 .btn-animal-outer.arcticfox, .btn-animal-outer.narwhal, .btn-animal-outer.climate_change {
@@ -112,16 +112,27 @@ body {
 }
 
 .btn-animal-outer.arcticwolf, .btn-animal-outer.orca, .btn-animal-outer.shipping {
-      transform: translate(-1319%, -45%) matrix3d(4, 0, 2.8, 0, 0, -5.6, 0, 0, 0, 0, -1, 0, 5539, 8, 12519, 1.2) !important;
+         transform: translate(-1319%, -45%) matrix3d(6, 0, 1.8, 0, 0, -5.6, 0, 0, 0, 0, -1, 0, 5539, 3, 12519, 0.7) !important;
 }
 
-.btn-animal-outer.ermine, .btn-animal-outer.walrus, .btn-animal-outer.mining, .btn-animal-outer.lemmenjoki {
-  transform: translate(-270%, -30%) matrix3d(-1, 0, 4, 0, 0, -4, 0, 0, 0, 0, -1, 0, -4001, 8, -2800, 3) !important;
+.btn-animal-outer.ermine, .btn-animal-outer.walrus, .btn-animal-outer.mining {
+    transform: translate(-332%, -30%) matrix3d(-6.2, 0, 6.2, 0, -2, -8, -1.1, 0, 0, 0, -1, 0, -4055, 3, -2806, 7) !important;
 }
+
+.btn-animal-outer.arctic_nature {
+  transform: translate(90%, -45%) matrix3d(3.4, 0, -8.4445, 0, 0, -8, 0, 0, 0, 0, -1, 0, 7244, 3, 4820, 14) !important;
+
+}
+
+.btn-animal-outer.lemmenjoki {
+  transform: translate(-332%, -30%) matrix3d(-9.2, 0, 10.2, 0, -4, -13, -1.1, 0, 0, 0, -1, 0, -4055, 3, -2806, 14) !important;
+}
+
+
+
 
 
 .btn-animal-inner {  
-  background-position: 22% 50%;
   background-size: cover;
   border-radius: 50%;
   border: 30px solid white;
@@ -131,19 +142,69 @@ body {
   width: 1000px;
   height: 1000px;
 }
+
+
 .btn-animal-inner::before {
   content: attr(data-content);
   display: table;
   position: absolute;
   top: 1069px;
-  left: 68px;
   font-family: 'Fjalla One';
-  font-size: 140px;
+  font-size: 165px;
   color:#fff;
   text-transform: uppercase;
   -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
   -o-transform:matrix(-1, 0, 0, 1, 0, 0);
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.ermineInner::before {
+    left: 334px;
+}
+.arcticFoxInner::before {
+    left: 200px;
+}
+.polarbearInner::before {
+    left: 100px;
+}
+
+.arcticFoxInner::before {
+    left: 100px;
+}
+
+.arcticWolfInner::before {
+    left: 100px;
+}
+
+.seaOtterInner::before {
+    left: 200px;
+}
+
+.walrusInner::before {
+    left: 240px;
+}
+.narwhalInner::before {
+    left: 155px;
+}
+.orcaInner::before {
+    left: 320px;
+}
+
+.miningInner::before {
+    left: 300px;
+}
+
+.climateInner::before {
+    left: 26px;
+}
+
+.oilGasInner::before {
+    left: 175px;
+}
+
+.shippingInner::before {
+    left: 176px;
 }
 
 .animal-image {
@@ -159,7 +220,7 @@ body {
 
   .animal-icon {
     width: 300px;
-    height: 160px;
+    height: 180px;
     background-position: 39%, 27%;
     background-size: 67%;
     background-repeat: no-repeat;
