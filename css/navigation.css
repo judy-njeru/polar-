@@ -113,7 +113,6 @@ li button{
 	height: 10px;
 	background-color: #fff;
 	border-radius: 50%;
-	
 	transform: scale(0);
 	transition: all .25s ease;
 	backface-visibility: hidden;

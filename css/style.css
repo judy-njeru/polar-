@@ -1,6 +1,6 @@
 body {
-  margin: 0px;
-  overflow: hidden;
+	margin: 0px;
+	overflow: hidden;
 }
 
 .logoimage{
@@ -16,256 +16,238 @@ body {
 }
 
 .shadow {
-  background-color: #000000;
-  opacity:0.9;
+	background-color: #000000;
+	opacity:0.9;
 }
 
-
 #container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .land-div  {
-  transform: translate(-81%, -206%) matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -13, 0, 0, -201, -62, -8, 3) !important;
-  color:#fff;
-  text-shadow: 2px 2px 4px #000000;
-      -webkit-font-smoothing: subpixel-antialiased;
-    zoom: 168%;
-}
+	transform: translate(-81%, -206%) matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -13, 0, 0, -201, -62, -8, 3) !important;
+	color:#fff;
+	text-shadow: 2px 2px 4px #000000;
+	-webkit-font-smoothing: subpixel-antialiased;
+	zoom: 168%;
+	}
 
 .sea-div  {
-      transform: translate(131%, -206%) matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -17, 0, 0, -204, -62, 96, 3) !important;
-  color:#fff;
-  text-shadow: 2px 2px 4px #000000;
-      -webkit-font-smoothing: subpixel-antialiased;
-    zoom: 168%;
+	transform: translate(131%, -206%) matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -17, 0, 0, -204, -62, 96, 3) !important;
+	color:#fff;
+	text-shadow: 2px 2px 4px #000000;
+	-webkit-font-smoothing: subpixel-antialiased;
+	zoom: 168%;
 }
 
 .threats-div  {
-  transform: translate(-108%, -206%) matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -13, 0, 0, 245, -62, 181, 3) !important;
-  color:#fff;
-  text-shadow: 2px 2px 4px #000000;
-      -webkit-font-smoothing: subpixel-antialiased;
-    zoom: 168%;
+	transform: translate(-108%, -206%) matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -13, 0, 0, 245, -62, 181, 3) !important;
+	color:#fff;
+	text-shadow: 2px 2px 4px #000000;
+	-webkit-font-smoothing: subpixel-antialiased;
+	zoom: 168%;
 }
 
 .protected-div  {
-      transform: translate(91%, -209%) matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -20, 0, 0, -204, -63, -7, 3) !important;
-  color:#fff;
-  text-shadow: 2px 2px 4px #000000;
-      -webkit-font-smoothing: subpixel-antialiased;
-    zoom: 168%;
+	transform: translate(91%, -209%) matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -20, 0, 0, -204, -63, -7, 3) !important;
+	color:#fff;
+	text-shadow: 2px 2px 4px #000000;
+	-webkit-font-smoothing: subpixel-antialiased;
+	zoom: 168%;
 }
 
-
 #info {
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  text-align: center;
-  z-index: 100;
-  display:block;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
 }
 
 #content {
-  position: absolute;
-  top:0;
-  bottom: :2rem;
-  right:2rem;
-  left:0;
-  background-color: #fff;
-  display: none;
-  z-index: 1000;
+	position: absolute;
+	top:0;
+	bottom: :2rem;
+	right:2rem;
+	left:0;
+	background-color: #fff;
+	display: none;
+	z-index: 1000;
 }
 
 #content.visible {
-  display: block;
+	display: block;
 }
 
 #sphere {
-  z-index: 0;
+	z-index: 0;
 }
 
 .btn-animal-outer {
-   top: -90px;
-    left: 54px;
-    font-size: 35px;
-    /*-webkit-transform: rotate(-90deg);*/
+	top: -90px;
+	left: 54px;
+	font-size: 35px;
 }
 
 .btn-animal-inner:hover{ 
-  /*box-shadow: 0px 0px 150px #000000;*/
-  transition: all 200ms ease-in;
-  transform: scale(1.1); 
+	transition: all 200ms ease-in;
+	transform: scale(1.1); 
 }
 
 .btn-animal-outer.polarbear, .btn-animal-outer.seaotter, .btn-animal-outer.oil_gas {
-      transform: translate(90%, -45%) matrix3d(3.4, 0, -4.4445, 0, 0, -5, 0, 0, 0, 0, -1, 0, 7244, 3, 4820, 3) !important;
+	transform: translate(90%, -45%) matrix3d(3.4, 0, -4.4445, 0, 0, -5, 0, 0, 0, 0, -1, 0, 7244, 3, 4820, 3) !important;
 }
 
 .btn-animal-outer.arcticfox, .btn-animal-outer.narwhal, .btn-animal-outer.climate_change {
-  transform: translate(109%, -44%) matrix3d(-1, 0, -1, 0, 0, -1.3, 0, 0, 0, 0, -1, 0, 281, 9, -2390, 1) !important;
+	transform: translate(109%, -44%) matrix3d(-1, 0, -1, 0, 0, -1.3, 0, 0, 0, 0, -1, 0, 281, 9, -2390, 1) !important;
 }
 
 .btn-animal-outer.arcticwolf, .btn-animal-outer.orca, .btn-animal-outer.shipping {
-         transform: translate(-1319%, -45%) matrix3d(6, 0, 1.8, 0, 0, -5.6, 0, 0, 0, 0, -1, 0, 5539, 3, 12519, 0.7) !important;
+	transform: translate(-1319%, -45%) matrix3d(6, 0, 1.8, 0, 0, -5.6, 0, 0, 0, 0, -1, 0, 5539, 3, 12519, 0.7) !important;
 }
 
 .btn-animal-outer.ermine, .btn-animal-outer.walrus, .btn-animal-outer.mining {
-    transform: translate(-332%, -30%) matrix3d(-6.2, 0, 6.2, 0, -2, -8, -1.1, 0, 0, 0, -1, 0, -4055, 3, -2806, 7) !important;
+	transform: translate(-332%, -30%) matrix3d(-6.2, 0, 6.2, 0, -2, -8, -1.1, 0, 0, 0, -1, 0, -4055, 3, -2806, 7) !important;
 }
 
 .btn-animal-outer.arctic_nature {
-  transform: translate(90%, -45%) matrix3d(3.4, 0, -8.4445, 0, 0, -8, 0, 0, 0, 0, -1, 0, 7244, 3, 4820, 14) !important;
+	transform: translate(90%, -45%) matrix3d(3.4, 0, -8.4445, 0, 0, -8, 0, 0, 0, 0, -1, 0, 7244, 3, 4820, 14) !important;
 
 }
 
 .btn-animal-outer.lemmenjoki {
-  transform: translate(-332%, -30%) matrix3d(-9.2, 0, 10.2, 0, -4, -13, -1.1, 0, 0, 0, -1, 0, -4055, 3, -2806, 14) !important;
+	transform: translate(-332%, -30%) matrix3d(-9.2, 0, 10.2, 0, -4, -13, -1.1, 0, 0, 0, -1, 0, -4055, 3, -2806, 14) !important;
 }
-
-
-
-
 
 .btn-animal-inner {  
-  background-size: cover;
-  border-radius: 50%;
-  border: 30px solid white;
-  position: relative;
-  right: 186px;
-  bottom: 200px;
-  width: 1000px;
-  height: 1000px;
+	background-size: cover;
+	border-radius: 50%;
+	border: 30px solid white;
+	position: relative;
+	right: 186px;
+	bottom: 200px;
+	width: 1000px;
+	height: 1000px;
 }
-
 
 .btn-animal-inner::before {
-  content: attr(data-content);
-  display: table;
-  position: absolute;
-  top: 1069px;
-  font-family: 'Fjalla One';
-  font-size: 165px;
-  color:#fff;
-  text-transform: uppercase;
-  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
-  -o-transform:matrix(-1, 0, 0, 1, 0, 0);
-  text-shadow: black 0.1em 0.1em 0.2em;
+	content: attr(data-content);
+	display: table;
+	position: absolute;
+	top: 1069px;
+	font-family: 'Fjalla One';
+	font-size: 165px;
+	color:#fff;
+	text-transform: uppercase;
+	-moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+	-o-transform:matrix(-1, 0, 0, 1, 0, 0);
+	text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+/*--- Position of bubble text ---*/
 .ermineInner::before {
-    left: 334px;
+	left: 334px;
 }
 .arcticFoxInner::before {
-    left: 200px;
+	left: 200px;
 }
 .polarbearInner::before {
-    left: 100px;
+	left: 100px;
 }
-
 .arcticFoxInner::before {
-    left: 100px;
+	left: 100px;
 }
-
 .arcticWolfInner::before {
-    left: 100px;
+	left: 100px;
 }
-
 .seaOtterInner::before {
-    left: 200px;
+	left: 200px;
 }
-
 .walrusInner::before {
-    left: 240px;
+	left: 240px;
 }
 .narwhalInner::before {
-    left: 155px;
+	left: 155px;
 }
 .orcaInner::before {
-    left: 320px;
+	left: 320px;
 }
-
 .miningInner::before {
-    left: 300px;
+	left: 300px;
 }
-
 .climateInner::before {
-    left: 26px;
+	left: 26px;
 }
-
 .oilGasInner::before {
-    left: 175px;
+	left: 175px;
 }
-
 .shippingInner::before {
-    left: 176px;
+	left: 176px;
 }
 
 .animal-image {
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    padding: 0;
-   }
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	padding: 0;
+}
 
-  .animal-icon {
-    width: 300px;
-    height: 180px;
-    background-position: 39%, 27%;
-    background-size: 67%;
-    background-repeat: no-repeat;
-  }
+.animal-icon {
+	width: 300px;
+	height: 180px;
+	background-position: 39%, 27%;
+	background-size: 67%;
+	background-repeat: no-repeat;
+}
 
-  .close {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 40px;
-    width: 40px;
-    background-color: red;
-  }
+.close {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 40px;
+	width: 40px;
+	background-color: red;
+}
 
 #form-window {
-  position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    padding: 2rem;
-    display: none;
-    z-index: 10001;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	padding: 2rem;
+	display: none;
+	z-index: 10001;
 }
 
-/* Info window */
+/*--- Info window ---*/
 #info-window {
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background-color:#fff;
-  padding:2rem;
-  display:none;
-  z-index: 10000;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	padding:2rem;
+	display:none;
+	z-index: 10000;
 }
-
-
 
 #info-window.visible {
-  display:block;
+	display:block;
 }
 
 #form-window.visible {
-  display:block;
+	display:block;
 }
