@@ -1,3 +1,6 @@
+# Polar
+## Arctic Protection Program
+School assignment for Vefskólinn.
 
-# polar-
+Ingunn & Judy
 
